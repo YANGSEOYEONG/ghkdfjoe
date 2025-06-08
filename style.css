@@ -165,7 +165,7 @@ a {
     filter: grayscale(100%);
     display: block;
     height: auto;
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     margin-left: auto;
     transition: all 0.3s ease;
@@ -177,7 +177,7 @@ a {
     display: block;
     height: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin-right: auto;
     transform: scale(1);
     transition: all 0.3s ease;
@@ -218,16 +218,10 @@ a {
     flex-wrap: wrap;
 }
 
-#artwork-name1, #artwork-name3 {
+#artwork-name1, #artwork-name2, #artwork-name3 {
     flex: 1 1 300px;
     display: flex;
     justify-content: center; 
-}
-
-#artwork-name2 {
-    flex: 1 1 300px;
-    display: flex;
-    justify-content: center;
 }
 
 .artwork-name {
@@ -238,14 +232,14 @@ a {
 
 #artworknamekr1, #artworknamekr2, #artworknamekr3 {
   font-weight: bold;
-  font-size: clamp(13pt, 3vw, 20pt);
+  font-size: clamp(13pt, 3vw, 16pt);
   text-align: center;
   margin-bottom: 10px;
 }
 
 .artworknameen {
   font-weight: normal;
-  font-size: clamp(10pt, 1.2vw, 16pt);
+  font-size: clamp(10pt, 2vw, 14pt);
   text-align: center;
   letter-spacing: -0.05em;
   margin-top: 0;
