@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>최정화, 내일의 꽃</title>
+  <style>
+   body {
+      max-width: 1920px;
+      font-family: sans-serif;
+      color: black;
+      padding: 0 100px;
+      margin: 0 auto;
+    }
+
+/* 마우스 호버효과 없애기 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color:#a9a9a9;
+  }
+
+  #titleline {
+    background-color: #a9a9a9 !important;
+}
+
+}
+
+
+    /* header */ 
+    .header 
+        { 
+          margin-top: 23px;   /* 제목 상단 여백 */
+          margin-left: auto;    /* 좌우 여백 */
+          margin-right: auto;   /* 좌우 여백 */
+          overflow: hidden;
+        }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 34pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+
+/* 본문 박스 */
+#mainbox {
+      padding: 0 50px;
+      margin: 0 auto;
+}
+
+
+/* title */
+#title {
+    margin-top: 64px;
+    margin-bottom: 70px;
+}
+
+#titlekr {
+      font-size: clamp(20px, 3vw, 25pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin-top: 64px;
+      margin-bottom: 0;
+}
+
+#titlelinebox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#titleen {
+      font-size: clamp(18px, 2.5vw, 20pt);
+      font-weight: 500;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: -0.02em;
+      margin-top: 5px;
+      margin-bottom: 0;
+}
+
+#titleline {
+  flex-grow: 1; /* 남은 공간 채우기 */
+  height: 1.5px;
+  background-color: black;
+}
+
+    /* 내용 */ 
+    #content {
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 0;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+        #image {
+          max-width: 700px;
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          align-self: center;
+          min-width: 0;
+        }
+
+        #artworkname {
+          margin-bottom: 40px;
+        }
+
+        #artworknamekr {
+          font-weight: bold;
+          font-size: clamp(16pt, 3vw, 18pt);
+        }
+
+        #artworknameen {
+          font-weight: normal;
+          font-size: clamp(12pt, 3vw, 16pt);
+        }
+
+        #etc {
+          margin-bottom: 40px;
+        }
+
+        .material {
+          font-weight: normal;
+          font-size: clamp(8pt, 1.8vw, 10pt);
+          line-height: 1.3;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        #articlekr {
+          font-size: clamp(15px, 2vw, 17pt);
+          font-weight: 500;
+          text-align: justify;
+          letter-spacing: -0.015em;
+          line-height: 1.6;
+          margin-top: 0;
+          margin-bottom: 20px;
+          flex: 1 1 60%;
+        }
+
+        #button {
+            font-family: sans-serif;
+            font-size: clamp(10pt, 1.8vw, 18pt);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        #button:hover {
+          text-decoration: underline;
+        }
+
+/* 하단 css */ 
+footer {
+    margin-top: 300px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+#footertitle{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(10pt, 1vw, 16pt);
+}
+
+#name {
+  font-family: sans-serif;
+  font-weight: regular;
+  font-size: 12pt;
+  margin-top: 8px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#name > #ysy{
+  font-size: 14pt;
+  line-height: 1;
+  text-decoration: underline;
+} 
+
+  @media screen and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+
+}
+
+  </style>
+</head>
+
+
+<body>
+<header> <!--메인페이지로 가는 header-->
+<div class="header">
+    <h1 style="float: left;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      백 투 더 퓨처:
+    </a>
+  </h1>
+  <h1 style="float: right;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      한국 현대미술의 동시대성 탐험기
+    </a>
+  </h1>
+  <div style="clear: both;"></div>
+  </div>
+</header>
+
+  <section id="mainbox">
+          <section id="title">
+              <div id="titlekr">시대 변화과 문화 지형 변동</div>
+              <div id="titlelinebox">
+                  <span id="titleen">A New Era of Diversion, and Paradigm Shift in Art</span>
+                  <div id="titleline"></div>
+              </div>
+          </section>
+
+          <section id="content">
+                <div id="article">
+                    <img id="image" src="images/image2.png" alt="최정화, 내일의 꽃">
+
+                                      <div id="etc">
+                    <div class="material">섬유, FRP, 고무, 우레아, 철 분말</div>
+                    <div class="material">163.5×130×128, 220×203×188, 114×96×111, 161×120×104, 201×130×133, 230×114×128, 69×208×208, 132×130×129, 248×171×149, 230×147×156, 199×68×76, 155×60×35, 143×48×47</div>
+                  </div>
+
+                    <div id="artworkname">
+                      <div id="artworknamekr">최정화, <내일의 꽃>, 2015</div>
+                      <div id="artworknameen"> CHOI Jeonghwa, <i>Flowers of Tomorrow</i>, 2015</div>
+                  </div>
+
+
+                  <div id="articlekr">
+                      <p> <내일의 꽃>은 우리 생활공간에서 쉽게 볼 수 있는 인조 수목과 화분에 도료 코팅을 한 작업으로 철가루로 뒤덮인 시든 꽃들과 형광색으로 피어난 꽃들이 대조를 이룬다.</p>
+                      <p> 작가는 이 작품에서 살아있는 식물의 피고 지는 모습을 인조 식물로 표현하며 생과 사의 어김없는 이치를 거스를 수 없음을 담아내고 있다. </p>
+                  </div>
+
+                  <a href="index.html" id="button">&lt; 이전</a>
+
+                </div>
+
+          </section>
+
+              <footer>
+                  <div id="footertitle">제작</div>
+                  <div id="name">
+                    <div id="cwj">최우진</div>
+                    <div id="ysy">양서영</div>
+                    <div id="ssz">손승재</div>
+                    <div id="psg">박석근</div>
+                    <div id="jhj">전휘재</div>
+                  </div>
+              </footer>
+  </section>
+</body>
+</html>

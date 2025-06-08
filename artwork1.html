@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>공성훈, 블라인드작업</title>
+  <style>
+   body {
+      max-width: 1920px;
+      font-family: sans-serif;
+      color: black;
+      padding: 0 100px;
+      margin: 0 auto;
+    }
+
+/* 마우스 호버효과 없애기 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color:#a9a9a9;
+  }
+
+  #titleline {
+    background-color: #a9a9a9 !important;
+}
+
+}
+
+
+    /* header */ 
+    .header 
+        { 
+          margin-top: 23px;   /* 제목 상단 여백 */
+          margin-left: auto;    /* 좌우 여백 */
+          margin-right: auto;   /* 좌우 여백 */
+          overflow: hidden;
+        }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 34pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+
+/* 본문 박스 */
+#mainbox {
+      padding: 0 50px;
+      margin: 0 auto;
+}
+
+
+/* title */
+#title {
+    margin-top: 64px;
+    margin-bottom: 70px;
+}
+
+#titlekr {
+      font-size: clamp(20px, 3vw, 25pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin-top: 64px;
+      margin-bottom: 0;
+}
+
+#titlelinebox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#titleen {
+      font-size: clamp(18px, 2.5vw, 20pt);
+      font-weight: 500;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: -0.02em;
+      margin-top: 5px;
+      margin-bottom: 0;
+}
+
+#titleline {
+  flex-grow: 1; /* 남은 공간 채우기 */
+  height: 1.5px;
+  background-color: black;
+}
+
+    /* 내용 */ 
+    #content {
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 0;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+        #image {
+          max-width: 700px;
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          align-self: center;
+          min-width: 0;
+        }
+
+        #artworkname {
+          margin-bottom: 40px;
+        }
+
+        #artworknamekr {
+          font-weight: bold;
+          font-size: clamp(16pt, 3vw, 18pt);
+        }
+
+        #artworknameen {
+          font-weight: normal;
+          font-size: clamp(12pt, 3vw, 16pt);
+        }
+
+        #etc {
+          margin-bottom: 40px;
+        }
+
+        .material {
+          font-weight: normal;
+          font-size: clamp(8pt, 1.8vw, 10pt);
+          line-height: 1.3;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        #articlekr {
+          font-size: clamp(15px, 2vw, 17pt);
+          font-weight: 500;
+          text-align: justify;
+          letter-spacing: -0.015em;
+          line-height: 1.6;
+          margin-top: 0;
+          margin-bottom: 20px;
+          flex: 1 1 60%;
+        }
+
+        #button {
+            font-family: sans-serif;
+            font-size: clamp(10pt, 1.8vw, 18pt);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        #button:hover {
+          text-decoration: underline;
+        }
+
+/* 하단 css */ 
+footer {
+    margin-top: 300px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+#footertitle{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(10pt, 1vw, 16pt);
+}
+
+#name {
+  font-family: sans-serif;
+  font-weight: regular;
+  font-size: 12pt;
+  margin-top: 8px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#name > #ysy{
+  font-size: 14pt;
+  line-height: 1;
+  text-decoration: underline;
+} 
+
+  @media screen and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+
+}
+
+  </style>
+</head>
+
+
+
+<body>
+<!--메인페이지로 가는 header-->
+<div class="header">
+    <h1 style="float: left;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      백 투 더 퓨처:
+    </a>
+  </h1>
+  <h1 style="float: right;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      한국 현대미술의 동시대성 탐험기
+    </a>
+  </h1>
+  <div style="clear: both;"></div>
+  </div>
+
+  <section id="mainbox">
+          <!--타이틀 제목-->
+          <section id="title">
+                  <div id="titlekr">시대 변환과 미술 지형 변동</div>
+
+                  <div id="titlelinebox">
+                  <span id="titleen">A New Era of Diversion, and Paradigm Shift in Art</span>
+                  <div id="titleline"> </div>
+                  </div>
+          </section>
+
+          <section id="content">
+                <div id="article">
+
+                  <img id="image" src="images/image1.png" alt="공성훈, 블라인드작업">
+
+                    <div id="etc">
+                      <div class="material">블라인드 4개, 페인트, 알루미늄 테이프, 모터</div>
+                      <div class="material">100X100X(4)</div>
+                    </div>
+
+                    <div id="artworkname">
+                      <div id="artworknamekr">공성훈, <블라인드 작업>, 1992</div>
+                      <div id="artworknameen">KONG Sunghun, <i>Blind-work</i>, 1992</div>
+                    </div>
+
+                    <div id="articlekr">
+                    <p><블라인드 작업>은 블라인드를 활용한 초기 연작 중 하나로, 전기모터가 장착된 네 개의 블라인드를 ‘엑스(X)자’ 형태로 설치한 작품이다.</p>
+                    <p>작가는 블라인드의 날개를 스펙트럼처럼 순차적으로 형광 페인트로 도색하고, 그 뒷면에는 알루미늄 테이프를 붙였다. 그리고 모터를 작동시키면 천천히 열림과 닫힘을 반복하면서 공간 속에서 빛을 반사하도록 하였다. 이 과정에서 일상적 사물인 블라인드는 본래의 기능을 상실한 채, 색채, 형태, 움직임 등의 시지각적 요소로서 제시된다.</p>
+                    <p>작가는 대량 생산된 소재, 제한적이고 단순한 제작 방식을 통해 작품의 의미를 최소화하면서 매체의 실험에 집중하고 있다. 보편적 개념이나 가치보다는 “구체적인 것”으로부터 미술을 다시 시작하고 싶다는 생각으로 전자공학을 공부했던 작가의 초기 작업 태도를 반영하는 작품이다.</p>
+                    </div>
+
+                    <a href="index.html" id="button">&lt; 이전</a>
+
+                  </div>
+
+
+          </section>
+
+              <footer>
+                  <div id="footertitle">제작</div>
+                  <div id="name">
+                    <div id="cwj">최우진</div>
+                    <div id="ysy">양서영</div>
+                    <div id="ssz">손승재</div>
+                    <div id="psg">박석근</div>
+                    <div id="jhj">전휘재</div>
+                  </div>
+              </footer>
+  </section>
+</body>
+</html>

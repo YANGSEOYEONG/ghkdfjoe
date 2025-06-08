@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>박이소, 역사의 문</title>
+  <style>
+   body {
+      max-width: 1920px;
+      font-family: sans-serif;
+      color: black;
+      padding: 0 100px;
+      margin: 0 auto;
+    }
+
+/* 마우스 호버효과 없애기 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color:#a9a9a9;
+  }
+
+  #titleline {
+    background-color: #a9a9a9 !important;
+}
+
+}
+
+
+    /* header */ 
+    .header 
+        { 
+          margin-top: 23px;   /* 제목 상단 여백 */
+          margin-left: auto;    /* 좌우 여백 */
+          margin-right: auto;   /* 좌우 여백 */
+          overflow: hidden;
+        }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 34pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+
+/* 본문 박스 */
+#mainbox {
+      padding: 0 50px;
+      margin: 0 auto;
+}
+
+
+/* title */
+#title {
+    margin-top: 64px;
+    margin-bottom: 70px;
+}
+
+#titlekr {
+      font-size: clamp(20px, 3vw, 25pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin-top: 64px;
+      margin-bottom: 0;
+}
+
+#titlelinebox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#titleen {
+      font-size: clamp(18px, 2.5vw, 20pt);
+      font-weight: 500;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: -0.02em;
+      margin-top: 5px;
+      margin-bottom: 0;
+}
+
+#titleline {
+  flex-grow: 1; /* 남은 공간 채우기 */
+  height: 1.5px;
+  background-color: black;
+}
+
+    /* 내용 */ 
+    #content {
+      width: 100%;
+      align-items: flex-start;
+      margin-top: 0;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+        #image {
+          max-width: 700px;
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          align-self: center;
+          min-width: 0;
+        }
+
+        #artworkname {
+          margin-bottom: 40px;
+        }
+
+        #artworknamekr {
+          font-weight: bold;
+          font-size: clamp(16pt, 3vw, 18pt);
+        }
+
+        #artworknameen {
+          font-weight: normal;
+          font-size: clamp(12pt, 3vw, 16pt);
+        }
+
+        #etc {
+          margin-bottom: 40px;
+        }
+
+        .material {
+          font-weight: normal;
+          font-size: clamp(8pt, 1.8vw, 10pt);
+          line-height: 1.3;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        #articlekr {
+          font-size: clamp(15px, 2vw, 17pt);
+          font-weight: 500;
+          text-align: justify;
+          letter-spacing: -0.015em;
+          line-height: 1.6;
+          margin-top: 0;
+          margin-bottom: 20px;
+          flex: 1 1 60%;
+        }
+
+        #button {
+            font-family: sans-serif;
+            font-size: clamp(10pt, 1.8vw, 18pt);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        #button:hover {
+          text-decoration: underline;
+        }
+
+/* 하단 css */ 
+footer {
+    margin-top: 300px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+#footertitle{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: clamp(10pt, 1vw, 16pt);
+}
+
+#name {
+  font-family: sans-serif;
+  font-weight: regular;
+  font-size: 12pt;
+  margin-top: 8px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#name > #ysy{
+  font-size: 14pt;
+  line-height: 1;
+  text-decoration: underline;
+} 
+
+  @media screen and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+
+}
+
+  </style>
+</head>
+
+
+<body>
+<header> <!--메인페이지로 가는 header-->
+<div class="header">
+    <h1 style="float: left;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      백 투 더 퓨처:
+    </a>
+  </h1>
+  <h1 style="float: right;">
+    <a href="https://woojinnchoi.github.io/backtothefuture/" style="color: inherit; text-decoration: none;">
+      한국 현대미술의 동시대성 탐험기
+    </a>
+  </h1>
+  <div style="clear: both;"></div>
+  </div>
+</header>
+
+  <section id="mainbox">
+        <section id="title">
+              <div id="titlekr">시대 변화과 문화 지형 변동</div>
+              <div id="titlelinebox">
+                  <span id="titleen">A New Era of Diversion, and Paradigm Shift in Art</span>
+                  <div id="titleline"></div>
+              </div>
+        </section>
+
+        <section id="content">
+                <div id="article">
+
+                <img id="image" src="images/image3.png" alt="박이소, 역사의 문">
+
+                      <div id="etc">
+                        <div class="material">캔버스에 아크릴릭 물감</div>
+                        <div class="material">181.4×187</div>
+                      </div>
+
+                      <div id="artworkname">
+                        <div id="artworknamekr">박이소, <역사의 문/역사적인 문>, 1987</div>
+                        <div id="artworknameen"> BAHC Yiso, <i>Entrance of History</i>, 1987</div>
+                      </div>
+
+                      <div id="articlekr">
+                        <p><역사의 문/역사적인 문>(1987)에 나오는 토끼 형상은 다양한 아이디어 스케치와 작품에 반복적으로 등장한다. 그러나 이 형상이 의미하는 바는 명확치 않다. 혹자는 이것인 토끼 형상의 한반도를 의미한다고도 하고 혹자는 이것이 한국적 감수성의 ‘달토끼’라고도 해석하지만 박이소 자신이 그 의미를 정확히 밝힌 바는 없다.</p>
+                        <p> 한자 ‘門’을 거꾸로 세워서 마치 전통가옥의 싸립문처럼 배치해 놓은 화면 상단에 토끼 형상이 등장한다. 원작에는 그 위로 검은 플라스틱 밥솥이 걸려 있었는데 이것은 훗날 유실되었다.</p>
+                        <p>1987~1989년 작가의 작업 노트에는 ‘과학적’,‘비과학적’,‘감정적’,‘양심적’,‘상징적’,‘정치적’,‘비정치적’, 전통적, 비전통적 등 ‘~적’이라는 단어가 집중적으로 등장한다. 의미가 고정된 명사와 달리 형용사는 개인마다 상태와 정도를 다르게 느끼기 때문에 의미가 하나로 고정되지 않고 계속 미끄러진다. 역사조차도 ‘역사적’이라는 형용사로 변할 때 다양한 외부적 해석이 가능해 지는 동시에 그 의미의 전유의 가능성도 열린다.</p>
+                      </div>
+
+                      <a href="index.html" id="button">&lt; 이전</a>
+                  </div>
+
+        </section>
+
+            <footer>
+                <div id="footertitle">제작</div>
+                <div id="name">
+                  <div id="cwj">최우진</div>
+                  <div id="ysy">양서영</div>
+                  <div id="ssz">손승재</div>
+                  <div id="psg">박석근</div>
+                  <div id="jhj">전휘재</div>
+                </div>
+            </footer>
+  </section>
+</body>
+
+</html>

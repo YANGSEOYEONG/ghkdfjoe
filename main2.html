@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>백 투 더 퓨처:Back to the future</title>
+  <style>
+    body {
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 0 100px;
+      font-family: sans-serif;
+      color: black;
+      position: relative;
+    }
+
+    #article {
+      padding: 0 50px;
+      margin: 0 auto;
+      min-width: 600px;
+      min-height: 1000px;
+      position: relative;
+    }
+
+    #header {
+      margin: 23px auto 0 auto;
+      padding: 0 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 34pt);
+      font-weight: bold;
+      letter-spacing: -0.02em;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    img {
+      position: absolute;
+      transition: left 0.4s;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hover-box span,
+    .text-pair span {
+      opacity: 0;
+      font-size: clamp(18px, 2.5vw, 25pt);
+      font-weight: bold;
+      letter-spacing: -1px;
+      transition: opacity 0.4s;
+      white-space: normal;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .hover-box:hover span,
+    .text-pair:hover span {
+      opacity: 1;
+    }
+
+    .hover-box span:hover,
+    .text-pair span:hover {
+      color: #00A1E9;
+    }
+
+    #back-box img {
+      top: 10.3%;
+      left: 29.25%;
+      width: 35.26%;
+    }
+
+    #back-text {
+      position: absolute;
+      top: 17.5%;
+      left: 23.57%;
+    }
+
+    #back-box:hover img {
+      left: 36%;
+    }
+
+    #to-box img {
+      top: 30%;
+      left: 39.03%;
+      width: 15.68%;
+    }
+
+    #to-text {
+      position: absolute;
+      top: 37.2%;
+      left: 54.7%;
+    }
+
+    #to-box:hover img {
+      left: 41%;
+    }
+
+    #the-box img {
+      top: 50%;
+      left: 36.4%;
+      width: 21%;
+    }
+
+    #the-text-wrap {
+      position: absolute;
+      top: 57.5%;
+      left: 32%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      transform: translateX(-50%);
+    }
+
+    #the-box:hover img {
+      left: 43%;
+    }
+
+    #future-box img {
+      top: 70%;
+      left: 25.7%;
+      width: 42.3%;
+    }
+
+    #future-text-wrap {
+      position: absolute;
+      top: 77.5%;
+      left: 54%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      transform: translateX(-50%);
+    }
+
+    #future-box:hover img {
+      left: 10.8%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #111;
+        color: #a9a9a9;
+      }
+
+      #articleen {
+        color: #7c7c7c !important;
+      }
+    }
+
+    footer {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #footertitle {
+      font-weight: bold;
+      font-size: clamp(10pt, 1vw, 16pt);
+    }
+
+    #name {
+      font-weight: normal;
+      font-size: 12pt;
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    #name > #cwj {
+      font-size: 14pt;
+      line-height: 1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>백 투 더 퓨처:</h1>
+    <h1>한국 현대미술의 동시대성 탐험기</h1>
+  </div>
+
+  <section id="article">
+    <a href="mmca.html" style="color: inherit;">
+      <div id="back-box" class="hover-box">
+        <img id="back" src="https://i.imgur.com/qlH7gXg.png" alt="Back">
+        <span id="back-text">MMCA 소장품 특별전</span>
+      </div>
+    </a>
+
+    <a href="backtothefuture.html" style="color: inherit;">
+      <div id="to-box" class="hover-box">
+        <img id="to" src="https://i.imgur.com/XcDkp4e.png" alt="To">
+        <span id="to-text">백 투 더 퓨처</span>
+      </div>
+    </a>
+
+    <div id="the-box" class="text-pair">
+      <img id="the" src="https://i.imgur.com/OWBPxeV.png" alt="The">
+      <div id="the-text-wrap">
+        <a href="https://yangseoyeong.github.io/seoyeongconding/" style="color: inherit;">
+          <span>시대 변환과 미술 지형 변동</span>
+        </a>
+        <a href="ssz_final.html" style="color: inherit;">
+          <span>불일치의 활성화</span>
+        </a>
+      </div>
+    </div>
+
+    <div id="future-box" class="text-pair">
+      <img id="future" src="https://i.imgur.com/xlX0Y8m.png" alt="Future">
+      <div id="future-text-wrap">
+        <a href="https://seokgeunn.github.io/my-web-page/" style="color: inherit;">
+          <span>이질성과 그 비평적 시공간</span>
+        </a>
+        <a href="jhj.html" style="color: inherit;">
+          <span>미래 간섭 혹은 미래 개입</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footertitle">제작</div>
+    <div id="name">
+      <div id="cwj">최우진</div>
+      <div id="ysy">양서영</div>
+      <div id="ssz">손승재</div>
+      <div id="psg">박석근</div>
+      <div id="jhj">전휘재</div>
+    </div>
+  </footer>
+</body>
+</html>
